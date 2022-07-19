@@ -1,0 +1,84 @@
+:root{
+  --color-link: aliceblue;
+}
+
+.Main-container{
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 85px 1fr;
+  grid-template-rows: 38px;
+  padding: 10px;
+  align-items: center;
+}
+.respmenu {
+  color: rgb(27, 25, 25);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 48px;
+  padding: 10px;
+}
+.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+}
+
+.respmenu .fa-bars, .respmenu .fa-times {
+  font-size: 35px;
+  pointer-events: none;
+}
+
+.respmenu input[type="checkbox"] {
+  opacity: 0;
+}
+.Nav-header-hamburger{
+  z-index: 1;
+  margin-right: 10%;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  color: var(--color-link);
+  border-radius: 5px;
+  padding: 20px;
+}
+.Nav-header-hamburger ul{
+  list-style: none;
+}
+.Nav-header-hamburger ul li{
+  margin: 6px;
+  text-align: center;
+}
+.respmenu a{
+  text-decoration: none;
+}
+.respmenu a:hover{
+  color:aqua;
+}
+.respmenu a:visited{
+  color: var(--color-link);
+}
+
+
+.respmenu nav {
+  display: none;
+  
+}
+
+.respmenu input:checked ~ nav {
+  display: block;
+  position: absolute;
+}
+
+.respmenu input:checked ~ .fa-bars {
+  display: none;
+}
+
+.respmenu input:not(:checked) ~ .fa-times {
+  display: none;
+}

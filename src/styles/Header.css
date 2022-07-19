@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+:root {
+  --navbar-color: rgb(25, 25, 28);
+  --general-background: rgb(255, 255, 255);
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: var(--navbar-color);
+}
+.Logo-header {
+  font-size: 30px;
+  font-family: "Great Vibes", cursive;
+  position: relative;
+  height: 100%;
+}
+.Logo-header::after {
+  content: "";
+  background-color: var(--general-background);
+  border-left: 3px solid black;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  animation: maquinaDeEscribir 1.5s infinite alternate steps(5);
+}
+.Header-list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  list-style: none;
+}
+.Header-list li a{
+    color: black;
+    text-decoration: none;
+}
+.Header-list li a:hover{
+    color: blue;
+}
+
+
+
+@keyframes maquinaDeEscribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}

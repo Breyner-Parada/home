@@ -1,0 +1,20 @@
+.Section-skills{
+    background-color: white;
+}
+.Section-skills p{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+.Skills-container {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    row-gap: 10px;
+}
+.Icon img{
+    width: 100px;
+    height: 100px;
+}
