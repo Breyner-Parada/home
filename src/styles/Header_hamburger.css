@@ -54,6 +54,10 @@
   margin: 6px;
   text-align: center;
 }
+.Nav-header-hamburger ul li a{
+  color: aliceblue;
+}
+
 .respmenu a{
   text-decoration: none;
 }
@@ -61,7 +65,7 @@
   color:aqua;
 }
 .respmenu a:visited{
-  color: var(--color-link);
+  color: yellow;
 }
 
 
