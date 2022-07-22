@@ -6,7 +6,7 @@ export const Contact = () => {
     <section className="Section-contact" id={4}>
       <p>CONTACT</p>
       <div className="Form-container">
-        <form action="https://stormy-forest-68431.herokuapp.com/contact" method="POST">
+        <form action="https://damp-savannah-29967.herokuapp.com/contact" method="POST">
           <div className="Full-name">
             <div className="First-name">
               <label for="fname">First Name</label>
